@@ -8,8 +8,7 @@
 
 <script>
 import prefix from "config/prefix";
-import parseSearch from 'utils/parseSearch'
-
+import parseSearch from "utils/parseSearch";
 
 export default {
   name: "ListItem",
@@ -17,9 +16,9 @@ export default {
     return {
       classObject: {
         [`${prefix}-list-item`]: true,
-        active: Number(parseSearch(location.search).p) === this.page.page
+        active: Number(parseSearch(location.search).p || 1) === this.page.page
       },
-      host: location.protocol+'//'+location.hostname + location.pathname + "?p="
+      host: `${location.protocol}//${location.hostname}${location.pathname}?p=`
     };
   },
   props: {
