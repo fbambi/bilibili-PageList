@@ -13,3 +13,9 @@ https://chrome.google.com/webstore/detail/bilibili-%E5%A4%9Ap%E5%88%97%E8%A1%A8%
 展开状态
 
 ![](screenshot.png)
+
+## 编译
+
+使用`vue-cli`构建 https://github.com/vuejs/vue-cli
+
+使用chrome开发者模式加载根目录（无需打包）
